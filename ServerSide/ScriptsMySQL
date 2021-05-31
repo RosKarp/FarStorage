@@ -1,0 +1,15 @@
+CREATE TABLE `users`.`logpass` (
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `login` VARCHAR(45) NOT NULL,
+  `password` VARCHAR(45) NULL,
+  UNIQUE INDEX `id_UNIQUE` (`id` ASC) INVISIBLE,
+  PRIMARY KEY (`id`),
+  UNIQUE INDEX `login_UNIQUE` (`login` ASC) VISIBLE)
+ENGINE = InnoDB
+DEFAULT CHARACTER SET = utf8mb4;
+
+INSERT INTO `users`.`logpass` (`id`, `login`, `password`) VALUES ('1', 'Vasya', '111');
+INSERT INTO `users`.`logpass` (`id`, `login`, `password`) VALUES ('2', 'Petya', '222');
+INSERT INTO `users`.`logpass` (`id`, `login`, `password`) VALUES ('3', 'Kolya', '333');
+
+База данных создается заранее и в ходе работы программы не изменяется.

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/11.0.1" fx:controller="client.Controller">
+    <TextField fx:id="msgField" promptText="Введите сообщение..." HBox.hgrow="ALWAYS" />
+    <TextArea fx:id="mainArea" editable="false" VBox.vgrow="ALWAYS" />
+    <HBox>
+        <Button maxWidth="300" onAction="#pressAuthButton" text="Вход" HBox.hgrow="ALWAYS" />
+        <Button maxWidth="300" onAction="#pressMkDirButton" text="Создать папку" HBox.hgrow="ALWAYS" />
+        <Button maxWidth="300" onAction="#pressDelButton" text="Удалить" HBox.hgrow="ALWAYS" />
+        <Button maxWidth="300" onAction="#pressUploadButton" text="Загрузить" HBox.hgrow="ALWAYS" />
+        <Button maxWidth="300" onAction="#pressDownloadButton" text="Скачать" HBox.hgrow="ALWAYS" />
+        <Button maxWidth="300" onAction="#pressSizeButton" text="Размер" HBox.hgrow="ALWAYS" />
+        <Button maxWidth="300" onAction="#pressChangeButton" text="Изменен" HBox.hgrow="ALWAYS" />
+        <Button maxWidth="300" onAction="#pressSearchButton" text="Поиск" HBox.hgrow="ALWAYS" />
+        <Button maxWidth="300" onAction="#pressSortButton" text="Сортировать" HBox.hgrow="ALWAYS" />
+    </HBox>
+</VBox>
